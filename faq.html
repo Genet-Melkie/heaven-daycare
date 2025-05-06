@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Heaven Daycare</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Outfit:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="w3-container w3-padding-16 w3-pale-blue">
+        <div class="w3-bar w3-round-large">
+            <a href="index.html" class="w3-bar-item logo">
+                <i class="fas fa-heart heart-icon"></i>
+                <span>Heaven Daycare</span>
+            </a>
+            <a href="javascript:void(0)"
+                class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium mobile-menu-btn"
+                onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+            <nav class="w3-right w3-hide-small desktop-menu">
+                <a href="index.html" class="w3-bar-item w3-button w3-round">Home</a>
+                <a href="programs.html" class="w3-bar-item w3-button w3-round">Programs</a>
+                <a href="parents.html" class="w3-bar-item w3-button w3-round">Parents</a>
+                <a href="about.html" class="w3-bar-item w3-button w3-round">About Us</a>
+                <a href="contact.html" class="w3-bar-item w3-button w3-round active">Contact</a>
+                <a href="faq.html" class="w3-bar-item w3-button w3-round active">FAQ</a>
+                <a href="index.html#tour" class="w3-bar-item w3-button cta-button w3-round">Schedule Tour</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="w3-bar-block w3-hide w3-animate-opacity mobile-nav">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="programs.html" class="w3-bar-item w3-button">Programs</a>
+            <a href="parents.html" class="w3-bar-item w3-button">Parents</a>
+            <a href="about.html" class="w3-bar-item w3-button">About Us</a>
+            <a href="contact.html" class="w3-bar-item w3-button active">Contact</a>
+            <a href="faq.html" class="w3-bar-item w3-button active">FAQ</a>
+            <a href="index.html#tour" class="w3-bar-item w3-button mobile-cta">Schedule Tour</a>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb w3-container">
+        <span><a href="index.html">Home</a></span>
+        <span>FAQ</span>
+    </div>
+
+    <!-- Page Header -->
+    <section class="w3-container w3-padding-32 page-header">
+        <div class="w3-center fade-in">
+            <h1 class="w3-text-primary">Frequently Asked Questions</h1>
+            <p class="w3-large">Find quick answers to common questions!</p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="w3-container w3-padding-4 w3-light-grey">
+        <div class="w3-row w3-padding-32">
+            <div class="w3-col l8 m10 s12 w3-padding-16 mx-auto">
+                <div class="faq-accordion fade-in">
+                    <button onclick="processAccordion('acc1')" class="accordion">What are your hours of
+                        operation?</button>
+                    <div id="acc1" class="w3-container w3-hide">
+                        <div class="accordion-content">
+                            <p>Heaven Daycare is open Monday through Friday from 6:30 AM to 6:30 PM. We are closed on
+                                weekends, major holidays, and for staff development days (which are announced at least
+                                one month in advance).</p>
+                        </div>
+                    </div>
+
+                    <button onclick="processAccordion('acc2')" class="accordion">How do I enroll my child?</button>
+                    <div id="acc2" class="w3-container w3-hide">
+                        <div class="accordion-content">
+                            <p>The enrollment process includes these steps:</p>
+                            <ol>
+                                <li>Schedule a tour to visit our facility</li>
+                                <li>Complete the registration form and pay the registration fee</li>
+                                <li>Submit required documentation (immunization records, emergency contacts, etc.)</li>
+                                <li>Attend parent orientation</li>
+                                <li>Schedule your child's start date</li>
+                            </ol>
+                            <p>We recommend starting the enrollment process at least 2-4 weeks before your desired start
+                                date.</p>
+                        </div>
+                    </div>
+
+                    <button onclick="processAccordion('acc3')" class="accordion">What is your teacher-to-child
+                        ratio?</button>
+                    <div id="acc3" class="w3-container w3-hide">
+                        <div class="accordion-content">
+                            <p>We maintain low ratios to ensure quality care and individualized attention:</p>
+                            <ul>
+                                <li>Infants (0-18 months): 1:3</li>
+                                <li>Toddlers (18-36 months): 1:5</li>
+                                <li>Preschool (3-5 years): 1:8</li>
+                                <li>After School (5-12 years): 1:12</li>
+                            </ul>
+                            <p>These ratios exceed state requirements to provide the best care possible.</p>
+                        </div>
+                    </div>
+
+                    <button onclick="processAccordion('acc4')" class="accordion">Do you provide meals?</button>
+                    <div id="acc4" class="w3-container w3-hide">
+                        <div class="accordion-content">
+                            <p>Yes, we provide nutritious meals and snacks that are included in your tuition:</p>
+                            <ul>
+                                <li>Breakfast: 8:00 AM - 8:30 AM</li>
+                                <li>Morning Snack: 10:00 AM - 10:30 AM</li>
+                                <li>Lunch: 11:30 AM - 12:30 PM (varies by age group)</li>
+                                <li>Afternoon Snack: 2:30 PM - 3:00 PM</li>
+                            </ul>
+                            <p>Our menu rotates on a 4-week cycle and is planned by a nutrition specialist. Weekly menus
+                                are posted in each classroom and on our parent portal.</p>
+                        </div>
+                    </div>
+
+                    <button onclick="processAccordion('acc5')" class="accordion">What is your security policy?</button>
+                    <div id="acc5" class="w3-container w3-hide">
+                        <div class="accordion-content">
+                            <p>Your child's safety is our top priority. Our security measures include:</p>
+                            <ul>
+                                <li>Secure access system with unique family codes</li>
+                                <li>Video monitoring throughout the facility</li>
+                                <li>Strict check-in/check-out procedures</li>
+                                <li>Authorized pick-up lists for each child</li>
+                                <li>Regular emergency drills</li>
+                                <li>Background checks for all staff</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="w3-container w3-padding-64 cta-section">
+        <div class="w3-row w3-center">
+            <div class="cta-content w3-padding">
+                <h2 class="w3-text-white">Ready to give your child the best start?</h2>
+                <p class="w3-large w3-text-white">Join our Heaven Daycare family today and watch your child flourish in
+                    our nurturing environment.</p>
+                <div class="w3-padding-16">
+                    <a href="index.html#tour" class="w3-button white-button w3-round-large w3-margin-right">Schedule a
+                        Tour</a>
+                    <a href="contact.html" class="w3-button white-outline-button w3-round-large">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="w3-container w3-padding-32 w3-dark-grey">
+        <div class="w3-row">
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Heaven Daycare</h4>
+                    <p>Creating a nurturing environment where children can learn, grow, and thrive.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="parents.html">Parents</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Hours</h4>
+                    <ul class="footer-hours">
+                        <li><span>Monday - Friday:</span> 6:30 AM - 6:30 PM</li>
+                        <li><span>Saturday:</span> Closed</li>
+                        <li><span>Sunday:</span> Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Contact Us</h4>
+                    <address class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Sunshine Ave, Cityville, ST 12345</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@heavendaycare.com</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="w3-row w3-padding-16">
+            <div class="w3-col s12 w3-center">
+                <p class="copyright">© 2025 Heaven Daycare. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

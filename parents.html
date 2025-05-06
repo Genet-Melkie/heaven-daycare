@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parents - Heaven Daycare</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Outfit:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="w3-container w3-padding-16 w3-pale-blue">
+        <div class="w3-bar w3-round-large">
+            <a href="index.html" class="w3-bar-item logo">
+                <i class="fas fa-heart heart-icon"></i>
+                <span>Heaven Daycare</span>
+            </a>
+            <a href="javascript:void(0)"
+                class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium mobile-menu-btn"
+                onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+            <nav class="w3-right w3-hide-small desktop-menu">
+                <a href="index.html" class="w3-bar-item w3-button w3-round">Home</a>
+                <a href="programs.html" class="w3-bar-item w3-button w3-round">Programs</a>
+                <a href="parents.html" class="w3-bar-item w3-button w3-round active">Parents</a>
+                <a href="about.html" class="w3-bar-item w3-button w3-round">About Us</a>
+                <a href="contact.html" class="w3-bar-item w3-button w3-round">Contact</a>
+                <a href="faq.html" class="w3-bar-item w3-button w3-round active">FAQ</a>
+                <a href="index.html#tour" class="w3-bar-item w3-button cta-button w3-round">Schedule Tour</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="w3-bar-block w3-hide w3-animate-opacity mobile-nav">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="programs.html" class="w3-bar-item w3-button">Programs</a>
+            <a href="parents.html" class="w3-bar-item w3-button active">Parents</a>
+            <a href="about.html" class="w3-bar-item w3-button">About Us</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+            <a href="faq.html" class="w3-bar-item w3-button active">FAQ</a>
+            <a href="index.html#tour" class="w3-bar-item w3-button mobile-cta">Schedule Tour</a>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb w3-container">
+        <span><a href="index.html">Home</a></span>
+        <span>Parents</span>
+    </div>
+
+    <!-- Page Header -->
+    <section class="w3-container w3-padding-32 page-header">
+        <div class="w3-center fade-in">
+            <h1 class="w3-text-primary">Parents Corner</h1>
+            <p class="w3-large">Resources, information, and tools to support your journey as a parent</p>
+        </div>
+    </section>
+
+    <!-- Parent Resources -->
+    <section class="w3-container w3-padding-64">
+        <div class="w3-row">
+            <div class="w3-col l6 m6 s12 w3-padding fade-in">
+                <div class="section-header">
+                    <h2 class="w3-text-primary">Resources for Parents</h2>
+                    <p class="w3-large">Tools and information to help you navigate parenthood</p>
+                </div>
+                <div class="parent-resources">
+                    <div class="resource-item">
+                        <div class="resource-icon"><i class="fas fa-book"></i></div>
+                        <div class="resource-text">
+                            <h4>Parent Handbook</h4>
+                            <p>Our comprehensive guide to Heaven Daycare's policies, procedures, and philosophy.</p>
+                            <a href="#" class="resource-link">Download Handbook (PDF) <i
+                                    class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-icon"><i class="fas fa-clipboard-list"></i></div>
+                        <div class="resource-text">
+                            <h4>Forms & Documents</h4>
+                            <p>Essential forms for enrollment, medical information, and permissions.</p>
+                            <a href="#" class="resource-link">Access Forms <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="resource-text">
+                            <h4>Nutrition & Menus</h4>
+                            <p>View our nutritious weekly menus and food philosophy.</p>
+                            <a href="#" class="resource-link">View Menus <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="resource-text">
+                            <h4>Curriculum Overview</h4>
+                            <p>Learn about our research-based approach to early childhood education.</p>
+                            <a href="#" class="resource-link">Explore Curriculum <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l6 m6 s12 w3-padding w3-center slide-up">
+                <img src="https://images.pexels.com/photos/3874366/pexels-photo-3874366.jpeg"
+                    alt="Parent reading with child" class="resource-image w3-round-large w3-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent Testimonials Video -->
+    <section class="w3-container w3-padding-64 w3-light-grey">
+        <div class="section-header w3-center fade-in">
+            <h2 class="w3-text-primary">Hear From Our Parents</h2>
+            <p class="w3-large">Watch testimonials from families who are part of our Heaven Daycare community</p>
+        </div>
+        <div class="w3-row w3-padding-32 custom-center">
+            <div class="w3-col l8 m10 s12 w3-padding-16 mx-auto slide-up">
+                <div class="video-container w3-round-large">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uYf4BrVqhHQ?si=9KaDd-B1w7jfWzit"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent Support Groups -->
+    <section class="w3-container w3-padding-64">
+        <div class="section-header w3-center">
+            <h2 class="w3-text-primary">Parent Community</h2>
+            <p class="w3-large">Connect with other parents and access additional support</p>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col l6 m6 s12 w3-padding w3-center slide-up">
+                <img src="https://images.pexels.com/photos/7282789/pexels-photo-7282789.jpeg"
+                    alt="Parent discussion group" class="support-image w3-round-large w3-image">
+            </div>
+            <div class="w3-col l6 m6 s12 w3-padding fade-in">
+                <div class="support-groups">
+                    <div class="support-item">
+                        <h4>Monthly Parent Coffee</h4>
+                        <p>Join us on the first Friday of each month from 8:30-9:30 AM for coffee, refreshments, and
+                            informal conversation with other parents and staff.</p>
+                        <a href="#" class="w3-button secondary-button-outline w3-round">View Schedule</a>
+                    </div>
+                    <div class="support-item">
+                        <h4>New Parent Orientation</h4>
+                        <p>For families just joining our community, we offer monthly orientation sessions to help you
+                            navigate the transition and meet other new families.</p>
+                        <a href="#" class="w3-button secondary-button-outline w3-round">Register for Orientation</a>
+                    </div>
+                    <div class="support-item">
+                        <h4>Parenting Workshops</h4>
+                        <p>We host quarterly workshops on topics like positive discipline, promoting literacy,
+                            nutrition, and child development milestones.</p>
+                        <a href="#" class="w3-button secondary-button-outline w3-round">Upcoming Workshops</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="w3-container w3-padding-64 cta-section">
+        <div class="w3-row w3-center">
+            <div class="cta-content w3-padding">
+                <h2 class="w3-text-white">Ready to give your child the best start?</h2>
+                <p class="w3-large w3-text-white">Join our Heaven Daycare family today and watch your child flourish in
+                    our nurturing environment.</p>
+                <div class="w3-padding-16">
+                    <a href="index.html#tour" class="w3-button white-button w3-round-large w3-margin-right">Schedule a
+                        Tour</a>
+                    <a href="contact.html" class="w3-button white-outline-button w3-round-large">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="w3-container w3-padding-32 w3-dark-grey">
+        <div class="w3-row">
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Heaven Daycare</h4>
+                    <p>Creating a nurturing environment where children can learn, grow, and thrive.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="parents.html">Parents</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Hours</h4>
+                    <ul class="footer-hours">
+                        <li><span>Monday - Friday:</span> 6:30 AM - 6:30 PM</li>
+                        <li><span>Saturday:</span> Closed</li>
+                        <li><span>Sunday:</span> Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Contact Us</h4>
+                    <address class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Sunshine Ave, Cityville, ST 12345</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@heavendaycare.com</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="w3-row w3-padding-16">
+            <div class="w3-col s12 w3-center">
+                <p class="copyright">© 2025 Heaven Daycare. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

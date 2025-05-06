@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaven Daycare - Nurturing Young Minds</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Outfit:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="w3-container w3-padding-16 w3-pale-blue">
+        <div class="w3-bar w3-round-large">
+            <a href="index.html" class="w3-bar-item logo">
+                <i class="fas fa-heart heart-icon"></i>
+                <span>Heaven Daycare</span>
+            </a>
+            <a href="javascript:void(0)"
+                class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium mobile-menu-btn"
+                onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+            <nav class="w3-right w3-hide-small desktop-menu">
+                <a href="index.html" class="w3-bar-item w3-button w3-round active">Home</a>
+                <a href="programs.html" class="w3-bar-item w3-button w3-round">Programs</a>
+                <a href="parents.html" class="w3-bar-item w3-button w3-round">Parents</a>
+                <a href="about.html" class="w3-bar-item w3-button w3-round">About Us</a>
+                <a href="contact.html" class="w3-bar-item w3-button w3-round">Contact</a>
+                <a href="faq.html" class="w3-bar-item w3-button w3-round active">FAQ</a>
+                <a href="#tour" class="w3-bar-item w3-button cta-button w3-round">Schedule Tour</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="w3-bar-block w3-hide w3-animate-opacity mobile-nav">
+            <a href="index.html" class="w3-bar-item w3-button active">Home</a>
+            <a href="programs.html" class="w3-bar-item w3-button">Programs</a>
+            <a href="parents.html" class="w3-bar-item w3-button">Parents</a>
+            <a href="about.html" class="w3-bar-item w3-button">About Us</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+            <a href="faq.html" class="w3-bar-item w3-button active">FAQ</a>
+            <a href="#tour" class="w3-bar-item w3-button mobile-cta">Schedule Tour</a>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="w3-container hero-section">
+        <div class="w3-row w3-padding-64" style="margin-left: 10;">
+            <div class="w3-col w3-padding-16 s12 w3-padding hero-content fade-in"
+                style=" margin: 10; padding: 10; background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');">
+                <h1 class="w3-text-primary hero-title"
+                    style="justify-content: center; align-items: center; text-align: center; color: white;">A Nurturing
+                    Environment for Your Child to Thrive</h1>
+                <p class="w3-large"
+                    style="justify-content: center; align-items: center; text-align: center; color: rgb(0, 6, 1);">At
+                    Heaven Daycare, we create a safe, loving space where children develop confidence, curiosity, and a
+                    love for learning.</p>
+                <div style="justify-content: center; align-items: center; text-align: center; color: white;">
+                    <div class="w3-padding-16"
+                        style="justify-content: center; align-items: center; text-align: center; color: white;">
+                        <a href="#tour" class="w3-button cta-button-large w3-round-large w3-margin-right">Schedule a
+                            Tour</a>
+                        <a href="programs.html" class="w3-button secondary-button w3-round-large">Explore Programs</a>
+                    </div>
+                    <div class="trust-icons w3-padding-16"
+                        style="justify-content: center; align-items: center; text-align: center; color: white;">
+                        <div class="w3-badge w3-padding-small w3-round-xlarge"><i class="fas fa-award"></i> Licensed
+                        </div>
+                        <div class="w3-badge w3-padding-small w3-round-xlarge"><i class="fas fa-check-circle"></i>
+                            Certified</div>
+                        <div class="w3-badge w3-padding-small w3-round-xlarge"><i class="fas fa-heart"></i> Loving Care
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="w3-col l6 m6 s12 w3-padding w3-center slide-up">
+                <img src="https://images.pexels.com/photos/8612921/pexels-photo-8612921.jpeg" alt="Happy children playing at daycare" class="hero-image w3-round-large w3-image">
+            </div> -->
+        </div>
+    </section>
+
+
+
+    <!-- Programs Highlights -->
+    <section id="programs-highlight" class="w3-container w3-padding-64 w3-light-grey">
+        <div class="section-header w3-center">
+            <h2 class="w3-text-primary">Our Programs</h2>
+            <p class="w3-large">Age-appropriate care and education for your little ones</p>
+        </div>
+        <div class="w3-row-padding w3-padding-16">
+            <div class="w3-col l4 m6 s12 w3-padding program-card-container fade-in">
+                <div class="w3-card-4 program-card">
+                    <div class="program-img-container">
+                        <img src="https://images.pexels.com/photos/1001914/pexels-photo-1001914.jpeg"
+                            alt="Infants Program" class="w3-image">
+                        <div class="age-badge">0-18 months</div>
+                    </div>
+                    <div class="w3-container w3-padding-16">
+                        <h3>Infants</h3>
+                        <p>Nurturing environment with individualized care to support your baby's development.</p>
+                        <a href="programs.html#infants" class="w3-button w3-round learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l4 m6 s12 w3-padding program-card-container fade-in" style="animation-delay: 0.2s;">
+                <div class="w3-card-4 program-card">
+                    <div class="program-img-container">
+                        <img src="https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg"
+                            alt="Toddlers Program" class="w3-image">
+                        <div class="age-badge">18-36 months</div>
+                    </div>
+                    <div class="w3-container w3-padding-16">
+                        <h3>Toddlers</h3>
+                        <p>Guided exploration and play-based learning to foster independence and social skills.</p>
+                        <a href="programs.html#toddlers" class="w3-button w3-round learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l4 m6 s12 w3-padding program-card-container fade-in" style="animation-delay: 0.4s;">
+                <div class="w3-card-4 program-card">
+                    <div class="program-img-container">
+                        <img src="https://images.pexels.com/photos/8535214/pexels-photo-8535214.jpeg"
+                            alt="Preschool Program" class="w3-image">
+                        <div class="age-badge">3-5 years</div>
+                    </div>
+                    <div class="w3-container w3-padding-16">
+                        <h3>Preschool</h3>
+                        <p>Comprehensive curriculum preparing children socially and academically for kindergarten.</p>
+                        <a href="programs.html#preschool" class="w3-button w3-round learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-center w3-padding-32">
+            <a href="programs.html" class="w3-button secondary-button-outline w3-round-large">View All Programs</a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="w3-container w3-padding-64">
+        <div class="w3-row">
+            <div class="w3-col l6 m6 s12 w3-padding w3-center slide-up">
+                <img src="https://images.pexels.com/photos/296301/pexels-photo-296301.jpeg"
+                    alt="Teacher and children in classroom" class="feature-image w3-round-large w3-image">
+            </div>
+            <div class="w3-col l6 m6 s12 w3-padding fade-in">
+                <div class="section-header">
+                    <h2 class="w3-text-primary">Why Choose Heaven Daycare?</h2>
+                    <p class="w3-large">We create an environment where children feel safe, loved, and inspired.</p>
+                </div>
+                <div class="features-container">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-user-graduate"></i></div>
+                        <div class="feature-text">
+                            <h4>Qualified Educators</h4>
+                            <p>All our teachers are certified in early childhood education and receive ongoing
+                                professional development.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="feature-text">
+                            <h4>Research-Based Curriculum</h4>
+                            <p>Age-appropriate learning experiences designed to foster growth across all developmental
+                                domains.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="feature-text">
+                            <h4>Safe & Secure Facilities</h4>
+                            <p>Modern security systems, strict check-in/out procedures, and regularly sanitized spaces.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-comments"></i></div>
+                        <div class="feature-text">
+                            <h4>Parent Communication</h4>
+                            <p>Daily updates, monthly newsletters, and parent-teacher conferences to keep you involved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-padding-16">
+                    <a href="about.html" class="w3-button secondary-button w3-round-large">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="w3-container w3-padding-64 w3-light-grey">
+        <div class="section-header w3-center">
+            <h2 class="w3-text-primary">What Parents Say</h2>
+            <p class="w3-large">Hear from families who are part of our Heaven Daycare community</p>
+        </div>
+        <div class="testimonial-container w3-padding-24">
+            <div class="testimonial-slides fade w3-padding-36">
+                <div class="w3-card-4 testimonial-card w3-white w3-round-large w3-padding-36">
+                    <div class="w3-container w3-padding-24">
+                        <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">Heaven Daycare has been a blessing for our family. The teachers
+                            genuinely care about my daughter's development, and she's thriving in their program. I
+                            couldn't ask for a better place for her to grow and learn.</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg"
+                                    alt="Sarah Johnson" class="w3-circle">
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Parent of Emma, age 4</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slides fade">
+                <div class="w3-card-4 testimonial-card w3-white w3-round-large">
+                    <div class="w3-container w3-padding-36">
+                        <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">The staff at Heaven Daycare treats my son like family. I love how
+                            they keep me updated throughout the day with photos and notes. His vocabulary and social
+                            skills have improved dramatically since enrolling.</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+                                    alt="Michael Chen" class="w3-circle">
+                            </div>
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <p>Parent of Liam, age 2</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slides fade">
+                <div class="w3-card-4 testimonial-card w3-white w3-round-large">
+                    <div class="w3-container w3-padding-16">
+                        <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">As first-time parents, we were nervous about daycare, but Heaven
+                            Daycare made the transition seamless. The facility is immaculate, secure, and filled with
+                            engaging activities. Our daughter can't wait to go every morning!</p>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
+                                    alt="Jessica Williams" class="w3-circle">
+                            </div>
+                            <div class="author-info">
+                                <h4>Jessica Williams</h4>
+                                <p>Parent of Sophia, age 3</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="testimonial-dots w3-center w3-padding-16">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Tour Scheduling -->
+    <section id="tour" class="w3-container w3-padding-64">
+        <div class="w3-row">
+            <div class="w3-col l6 m6 s12 w3-padding fade-in">
+                <div class="section-header">
+                    <h2 class="w3-text-primary">Schedule a Tour</h2>
+                    <p class="w3-large">Visit our facility and see firsthand how we nurture young minds.</p>
+                </div>
+                <form id="tour-form" class="w3-container w3-padding-16">
+                    <div class="form-group">
+                        <label class="form-label" for="tour-name">Full Name</label>
+                        <input class="w3-input form-input" type="text" id="tour-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="tour-email">Email Address</label>
+                        <input class="w3-input form-input" type="email" id="tour-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="tour-phone">Phone Number</label>
+                        <input class="w3-input form-input" type="tel" id="tour-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="tour-date">Preferred Date</label>
+                        <input class="w3-input form-input" type="date" id="tour-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="tour-time">Preferred Time</label>
+                        <select class="w3-select form-input" id="tour-time" required>
+                            <option value="" disabled selected>Select a time</option>
+                            <option value="morning">9:00 AM - 11:00 AM</option>
+                            <option value="afternoon">1:00 PM - 3:00 PM</option>
+                            <option value="evening">4:00 PM - 6:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Program of Interest</label>
+                        <div class="w3-row">
+                            <div class="w3-col s6">
+                                <label class="w3-check">
+                                    <input type="checkbox" name="program" value="infants">
+                                    Infants (0-18 months)
+                                </label>
+                            </div>
+                            <div class="w3-col s6">
+                                <label class="w3-check">
+                                    <input type="checkbox" name="program" value="toddlers">
+                                    Toddlers (18-36 months)
+                                </label>
+                            </div>
+                            <div class="w3-col s6">
+                                <label class="w3-check">
+                                    <input type="checkbox" name="program" value="preschool">
+                                    Preschool (3-5 years)
+                                </label>
+                            </div>
+                            <div class="w3-col s6">
+                                <label class="w3-check">
+                                    <input type="checkbox" name="program" value="afterschool">
+                                    After School (5-12 years)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-padding-16">
+                        <button type="submit" class="w3-button cta-button-large w3-round-large">Schedule My
+                            Tour</button>
+                    </div>
+                </form>
+            </div>
+            <div class="w3-col l6 m6 s12 w3-padding w3-center slide-up">
+                <img src="img/melissa-askew-8n00CqwnqO8-unsplash.jpg" alt="Daycare tour"
+                    class="tour-image w3-round-large w3-image">
+                <div class="tour-features w3-padding-16">
+                    <div class="tour-feature">
+                        <i class="fas fa-clock"></i>
+                        <p>30-minute personalized tour</p>
+                    </div>
+                    <div class="tour-feature">
+                        <i class="fas fa-user-friends"></i>
+                        <p>Meet our caring staff</p>
+                    </div>
+                    <div class="tour-feature">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <p>See our nurturing environment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="w3-container w3-padding-64 cta-section">
+        <div class="w3-row w3-center">
+            <div class="cta-content w3-padding">
+                <h2 class="w3-text-white">Ready to give your child the best start?</h2>
+                <p class="w3-large w3-text-white">Join our Heaven Daycare family today and watch your child flourish in
+                    our nurturing environment.</p>
+                <div class="w3-padding-16">
+                    <a href="#tour" class="w3-button white-button w3-round-large w3-margin-right">Schedule a Tour</a>
+                    <a href="contact.html" class="w3-button white-outline-button w3-round-large">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="w3-container w3-padding-32 w3-dark-grey">
+        <div class="w3-row">
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Heaven Daycare</h4>
+                    <p>Creating a nurturing environment where children can learn, grow, and thrive.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="parents.html">Parents</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Hours</h4>
+                    <ul class="footer-hours">
+                        <li><span>Monday - Friday:</span> 6:30 AM - 6:30 PM</li>
+                        <li><span>Saturday:</span> Closed</li>
+                        <li><span>Sunday:</span> Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Contact Us</h4>
+                    <address class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Sunshine Ave, Cityville, ST 12345</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@heavendaycare.com</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="w3-row w3-padding-16">
+            <div class="w3-col s12 w3-center">
+                <p class="copyright">© 2025 Heaven Daycare. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tour Modal Confirmation -->
+    <div id="tour-modal" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large" style="max-width:600px">
+            <div class="w3-container">
+                <span onclick="document.getElementById('tour-modal').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <div class="w3-padding-32 w3-center">
+                    <i class="fas fa-check-circle modal-icon"></i>
+                    <h3 class="w3-text-primary">Tour Scheduled!</h3>
+                    <p>Thank you for scheduling a tour with Heaven Daycare. We've received your request and will contact
+                        you shortly to confirm your appointment.</p>
+                    <div class="w3-padding-16">
+                        <button onclick="document.getElementById('tour-modal').style.display='none'"
+                            class="w3-button secondary-button w3-round-large">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/testimonials.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - Heaven Daycare</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Outfit:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="w3-container w3-padding-16 w3-pale-blue">
+        <div class="w3-bar w3-round-large">
+            <a href="index.html" class="w3-bar-item logo">
+                <i class="fas fa-heart heart-icon"></i>
+                <span>Heaven Daycare</span>
+            </a>
+            <a href="javascript:void(0)"
+                class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium mobile-menu-btn"
+                onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+            <nav class="w3-right w3-hide-small desktop-menu">
+                <a href="index.html" class="w3-bar-item w3-button w3-round">Home</a>
+                <a href="programs.html" class="w3-bar-item w3-button w3-round active">Programs</a>
+                <a href="parents.html" class="w3-bar-item w3-button w3-round">Parents</a>
+                <a href="about.html" class="w3-bar-item w3-button w3-round">About Us</a>
+                <a href="contact.html" class="w3-bar-item w3-button w3-round">Contact</a>
+                <a href="faq.html" class="w3-bar-item w3-button w3-round active">FAQ</a>
+                <a href="index.html#tour" class="w3-bar-item w3-button cta-button w3-round">Schedule Tour</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="w3-bar-block w3-hide w3-animate-opacity mobile-nav">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="programs.html" class="w3-bar-item w3-button active">Programs</a>
+            <a href="parents.html" class="w3-bar-item w3-button">Parents</a>
+            <a href="about.html" class="w3-bar-item w3-button">About Us</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+            <a href="faq.html" class="w3-bar-item w3-button active">FAQ</a>
+            <a href="index.html#tour" class="w3-bar-item w3-button mobile-cta">Schedule Tour</a>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb w3-container">
+        <span><a href="index.html">Home</a></span>
+        <span>Programs</span>
+    </div>
+
+    <!-- Page Header -->
+    <section class="w3-container w3-padding-32 page-header">
+        <div class="w3-center fade-in">
+            <h1 class="w3-text-primary">Our Programs</h1>
+            <p class="w3-large">Discover the perfect program for your child's age and developmental needs</p>
+        </div>
+    </section>
+
+    <!-- Programs Search and Filter -->
+    <section class="w3-container w3-padding-16">
+        <div class="w3-row">
+            <div class="w3-col l6 m6 s12 w3-padding">
+                <div class="program-filter">
+                    <label class="form-label" for="program-search">Search Programs:</label>
+                    <div class="search-input-container">
+                        <input type="text" id="program-search" class="w3-input form-input" onkeyup="filterPrograms()"
+                            placeholder="Search by age, activities, or keywords...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l6 m6 s12 w3-padding">
+                <div class="program-filter">
+                    <label class="form-label" for="age-filter">Filter by Age Group:</label>
+                    <select id="age-filter" class="w3-select form-input" onchange="filterPrograms()">
+                        <option value="all">All Age Groups</option>
+                        <option value="infants">Infants (0-18 months)</option>
+                        <option value="toddlers">Toddlers (18-36 months)</option>
+                        <option value="preschool">Preschool (3-5 years)</option>
+                        <option value="afterschool">After School (5-12 years)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs List -->
+    <section class="w3-container w3-padding-64">
+        <!-- Infants Program -->
+        <div id="infants" class="program-item">
+            <div class="w3-row">
+                <div class="w3-col l6 m6 s12 w3-padding fade-in">
+                    <div class="program-content">
+                        <div class="program-badge">0-18 months</div>
+                        <h2 class="w3-text-primary">Infants Program</h2>
+                        <p class="program-description">Our infant program provides a nurturing, safe environment where
+                            your baby can develop at their own pace. We focus on creating strong bonds between
+                            caregivers and infants to build trust and security.</p>
+
+                        <h3>Program Highlights:</h3>
+                        <ul class="program-highlights">
+                            <li><i class="fas fa-check-circle"></i> Low teacher-to-child ratio (1:3) for personalized
+                                care</li>
+                            <li><i class="fas fa-check-circle"></i> Daily communication with parents through our app
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Sensory-rich environment to stimulate development
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Customized care routines following parents'
+                                preferences</li>
+                            <li><i class="fas fa-check-circle"></i> Tummy time and physical development activities</li>
+                        </ul>
+
+                        <h3>Daily Schedule:</h3>
+                        <div class="w3-responsive">
+                            <table class="w3-table program-schedule">
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Activity</th>
+                                </tr>
+                                <tr>
+                                    <td>6:30 AM - 8:00 AM</td>
+                                    <td>Arrival & Free Play</td>
+                                </tr>
+                                <tr>
+                                    <td>8:00 AM - 8:30 AM</td>
+                                    <td>Breakfast</td>
+                                </tr>
+                                <tr>
+                                    <td>8:30 AM - 9:30 AM</td>
+                                    <td>Sensory Play</td>
+                                </tr>
+                                <tr>
+                                    <td>9:30 AM - 10:00 AM</td>
+                                    <td>Naptime (Individualized)</td>
+                                </tr>
+                                <tr>
+                                    <td>10:00 AM - 10:30 AM</td>
+                                    <td>Story & Music Time</td>
+                                </tr>
+                                <tr>
+                                    <td>10:30 AM - 11:30 AM</td>
+                                    <td>Outdoor Time (Weather Permitting)</td>
+                                </tr>
+                                <tr>
+                                    <td>11:30 AM - 12:00 PM</td>
+                                    <td>Lunch</td>
+                                </tr>
+                                <tr>
+                                    <td>12:00 PM - 2:00 PM</td>
+                                    <td>Naptime</td>
+                                </tr>
+                                <tr>
+                                    <td>2:00 PM - 3:00 PM</td>
+                                    <td>Physical Development</td>
+                                </tr>
+                                <tr>
+                                    <td>3:00 PM - 3:30 PM</td>
+                                    <td>Snack</td>
+                                </tr>
+                                <tr>
+                                    <td>3:30 PM - 4:30 PM</td>
+                                    <td>Cognitive Activities</td>
+                                </tr>
+                                <tr>
+                                    <td>4:30 PM - 6:30 PM</td>
+                                    <td>Free Play & Departure</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="program-registration w3-padding-16">
+                            <a href="index.html#tour" class="w3-button cta-button-large w3-round-large">Schedule A
+                                Tour</a>
+                            <button onclick="document.getElementById('registration-modal').style.display='block'"
+                                class="w3-button secondary-button w3-round-large w3-margin-left">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l6 m6 s12 w3-padding">
+                    <div class="program-gallery slide-up">
+                        <div class="program-main-img">
+                            <img src="https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg"
+                                alt="Infant Program" class="w3-image w3-round-large">
+                        </div>
+                        <div class="program-gallery-thumbs">
+                            <img src="https://images.pexels.com/photos/3933027/pexels-photo-3933027.jpeg"
+                                alt="Infant playing" class="w3-image w3-round" onclick="showFullImage(this.src)">
+                            <img src="https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg"
+                                alt="Teacher with infant" class="w3-image w3-round" onclick="showFullImage(this.src)">
+                            <img src="https://images.pexels.com/photos/3661474/pexels-photo-3661474.jpeg"
+                                alt="Infant development" class="w3-image w3-round" onclick="showFullImage(this.src)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-padding-32"></div>
+
+        <!-- Toddlers Program -->
+        <div id="toddlers" class="program-item">
+            <div class="w3-row">
+                <div class="w3-col l6 m6 s12 w3-padding">
+                    <div class="program-gallery slide-up">
+                        <div class="program-main-img">
+                            <img src="https://images.pexels.com/photos/1001914/pexels-photo-1001914.jpeg"
+                                alt="Toddler Program" class="w3-image w3-round-large">
+                        </div>
+                        <div class="program-gallery-thumbs">
+                            <img src="https://images.pexels.com/photos/296301/pexels-photo-296301.jpeg"
+                                alt="Toddlers playing" class="w3-image w3-round" onclick="showFullImage(this.src)">
+                            <img src="https://images.pexels.com/photos/1001914/pexels-photo-1001914.jpeg"
+                                alt="Teacher with toddlers" class="w3-image w3-round" onclick="showFullImage(this.src)">
+                            <img src="https://images.pexels.com/photos/8363033/pexels-photo-8363033.jpeg"
+                                alt="Toddler development" class="w3-image w3-round" onclick="showFullImage(this.src)">
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l6 m6 s12 w3-padding fade-in">
+                    <div class="program-content">
+                        <div class="program-badge">18-36 months</div>
+                        <h2 class="w3-text-primary">Toddlers Program</h2>
+                        <p class="program-description">Our toddler program embraces children's natural curiosity and
+                            growing independence. We provide opportunities for exploration, social interaction, and
+                            emerging language development in a safe, stimulating environment.</p>
+
+                        <h3>Program Highlights:</h3>
+                        <ul class="program-highlights">
+                            <li><i class="fas fa-check-circle"></i> Teacher-to-child ratio of 1:5 for attentive
+                                supervision</li>
+                            <li><i class="fas fa-check-circle"></i> Introduction to routines and group activities</li>
+                            <li><i class="fas fa-check-circle"></i> Focus on language acquisition and communication
+                                skills</li>
+                            <li><i class="fas fa-check-circle"></i> Toilet training support when your child is ready
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Fine and gross motor skill development</li>
+                        </ul>
+
+                        <h3>Daily Schedule:</h3>
+                        <div class="w3-responsive">
+                            <table class="w3-table program-schedule">
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Activity</th>
+                                </tr>
+                                <tr>
+                                    <td>6:30 AM - 8:00 AM</td>
+                                    <td>Arrival & Free Play</td>
+                                </tr>
+                                <tr>
+                                    <td>8:00 AM - 8:30 AM</td>
+                                    <td>Breakfast</td>
+                                </tr>
+                                <tr>
+                                    <td>8:30 AM - 9:00 AM</td>
+                                    <td>Circle Time & Songs</td>
+                                </tr>
+                                <tr>
+                                    <td>9:00 AM - 10:00 AM</td>
+                                    <td>Art & Sensory Activities</td>
+                                </tr>
+                                <tr>
+                                    <td>10:00 AM - 10:30 AM</td>
+                                    <td>Snack Time</td>
+                                </tr>
+                                <tr>
+                                    <td>10:30 AM - 11:30 AM</td>
+                                    <td>Outdoor Play</td>
+                                </tr>
+                                <tr>
+                                    <td>11:30 AM - 12:00 PM</td>
+                                    <td>Lunch</td>
+                                </tr>
+                                <tr>
+                                    <td>12:00 PM - 2:00 PM</td>
+                                    <td>Naptime</td>
+                                </tr>
+                                <tr>
+                                    <td>2:00 PM - 2:30 PM</td>
+                                    <td>Story Time</td>
+                                </tr>
+                                <tr>
+                                    <td>2:30 PM - 3:00 PM</td>
+                                    <td>Snack</td>
+                                </tr>
+                                <tr>
+                                    <td>3:00 PM - 4:00 PM</td>
+                                    <td>Learning Centers</td>
+                                </tr>
+                                <tr>
+                                    <td>4:00 PM - 5:00 PM</td>
+                                    <td>Outdoor/Indoor Play</td>
+                                </tr>
+                                <tr>
+                                    <td>5:00 PM - 6:30 PM</td>
+                                    <td>Free Play & Departure</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="program-registration w3-padding-16">
+                            <a href="index.html#tour" class="w3-button cta-button-large w3-round-large">Schedule A
+                                Tour</a>
+                            <button onclick="document.getElementById('registration-modal').style.display='block'"
+                                class="w3-button secondary-button w3-round-large w3-margin-left">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-padding-32"></div>
+
+        <!-- Preschool Program -->
+        <div id="preschool" class="program-item">
+            <div class="w3-row">
+                <div class="w3-col l6 m6 s12 w3-padding fade-in">
+                    <div class="program-content">
+                        <div class="program-badge">3-5 years</div>
+                        <h2 class="w3-text-primary">Preschool Program</h2>
+                        <p class="program-description">Our preschool program prepares children for success in
+                            kindergarten and beyond. Through a balance of structured learning and creative play,
+                            children develop social skills, early literacy, mathematical concepts, and scientific
+                            thinking.</p>
+
+                        <h3>Program Highlights:</h3>
+                        <ul class="program-highlights">
+                            <li><i class="fas fa-check-circle"></i> Teacher-to-child ratio of 1:8 allowing individual
+                                attention</li>
+                            <li><i class="fas fa-check-circle"></i> Comprehensive school readiness curriculum</li>
+                            <li><i class="fas fa-check-circle"></i> Focus on early literacy and pre-reading skills</li>
+                            <li><i class="fas fa-check-circle"></i> Introduction to mathematical concepts through
+                                hands-on activities</li>
+                            <li><i class="fas fa-check-circle"></i> Social-emotional development and conflict resolution
+                                skills</li>
+                        </ul>
+
+                        <h3>Daily Schedule:</h3>
+                        <div class="w3-responsive">
+                            <table class="w3-table program-schedule">
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Activity</th>
+                                </tr>
+                                <tr>
+                                    <td>6:30 AM - 8:00 AM</td>
+                                    <td>Arrival & Learning Centers</td>
+                                </tr>
+                                <tr>
+                                    <td>8:00 AM - 8:30 AM</td>
+                                    <td>Breakfast</td>
+                                </tr>
+                                <tr>
+                                    <td>8:30 AM - 9:00 AM</td>
+                                    <td>Circle Time & Calendar</td>
+                                </tr>
+                                <tr>
+                                    <td>9:00 AM - 10:00 AM</td>
+                                    <td>Literacy Activities</td>
+                                </tr>
+                                <tr>
+                                    <td>10:00 AM - 10:30 AM</td>
+                                    <td>Snack & Bathroom Break</td>
+                                </tr>
+                                <tr>
+                                    <td>10:30 AM - 11:30 AM</td>
+                                    <td>Outdoor Learning & Play</td>
+                                </tr>
+                                <tr>
+                                    <td>11:30 AM - 12:30 PM</td>
+                                    <td>Math & Science Activities</td>
+                                </tr>
+                                <tr>
+                                    <td>12:30 PM - 1:00 PM</td>
+                                    <td>Lunch</td>
+                                </tr>
+                                <tr>
+                                    <td>1:00 PM - 2:30 PM</td>
+                                    <td>Rest Time</td>
+                                </tr>
+                                <tr>
+                                    <td>2:30 PM - 3:00 PM</td>
+                                    <td>Snack</td>
+                                </tr>
+                                <tr>
+                                    <td>3:00 PM - 4:00 PM</td>
+                                    <td>Art & Creative Expression</td>
+                                </tr>
+                                <tr>
+                                    <td>4:00 PM - 5:00 PM</td>
+                                    <td>Learning Centers</td>
+                                </tr>
+                                <tr>
+                                    <td>5:00 PM - 6:30 PM</td>
+                                    <td>Free Play & Departure</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="program-registration w3-padding-16">
+                            <a href="index.html#tour" class="w3-button cta-button-large w3-round-large">Schedule A
+                                Tour</a>
+                            <button onclick="document.getElementById('registration-modal').style.display='block'"
+                                class="w3-button secondary-button w3-round-large w3-margin-left">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l6 m6 s12 w3-padding">
+                    <div class="program-gallery slide-up">
+                        <div class="program-main-img">
+                            <img src="https://images.pexels.com/photos/8535214/pexels-photo-8535214.jpeg"
+                                alt="Preschool Program" class="w3-image w3-round-large">
+                        </div>
+                        <div class="program-gallery-thumbs">
+                            <img src="https://images.pexels.com/photos/8535214/pexels-photo-8535214.jpeg"
+                                alt="Preschool activities" class="w3-image w3-round" onclick="showFullImage(this.src)">
+                            <img src="https://images.pexels.com/photos/8364026/pexels-photo-8364026.jpeg"
+                                alt="Children learning" class="w3-image w3-round" onclick="showFullImage(this.src)">
+                            <img src="https://images.pexels.com/photos/8535154/pexels-photo-8535154.jpeg"
+                                alt="Outdoor play" class="w3-image w3-round" onclick="showFullImage(this.src)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-padding-32"></div>
+
+        <!-- After School Program -->
+        <div id="afterschool" class="program-item">
+            <div class="w3-row">
+                <div class="w3-col l6 m6 s12 w3-padding">
+                    <div class="program-gallery slide-up">
+                        <div class="program-main-img">
+                            <img src="https://images.pexels.com/photos/754769/pexels-photo-754769.jpeg"
+                                alt="After School Program" class="w3-image w3-round-large">
+                        </div>
+                        <div class="program-gallery-thumbs">
+                            <img src="https://images.pexels.com/photos/754769/pexels-photo-754769.jpeg"
+                                alt="Children playing" class="w3-image w3-round" onclick="showFullImage(this.src)">
+                            <img src="https://images.pexels.com/photos/256468/pexels-photo-256468.jpeg"
+                                alt="Drawing time" class="w3-image w3-round" onclick="showFullImage(this.src)">
+                            <img src="https://images.pexels.com/photos/3769981/pexels-photo-3769981.jpeg"
+                                alt="Homework help" class="w3-image w3-round" onclick="showFullImage(this.src)">
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l6 m6 s12 w3-padding fade-in">
+                    <div class="program-content">
+                        <div class="program-badge">5-12 years</div>
+                        <h2 class="w3-text-primary">After School Program</h2>
+                        <p class="program-description">Our after-school program provides a safe, enriching environment
+                            for school-age children. We balance homework support with recreational activities, giving
+                            children time to learn, play, and socialize after a day at school.</p>
+
+                        <h3>Program Highlights:</h3>
+                        <ul class="program-highlights">
+                            <li><i class="fas fa-check-circle"></i> Transportation from local schools to our facility
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Dedicated homework time with staff assistance</li>
+                            <li><i class="fas fa-check-circle"></i> STEM activities, arts and crafts, and physical games
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Special interest clubs and projects</li>
+                            <li><i class="fas fa-check-circle"></i> Full-day care during school holidays and breaks</li>
+                        </ul>
+
+                        <h3>Daily Schedule:</h3>
+                        <div class="w3-responsive">
+                            <table class="w3-table program-schedule">
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Activity</th>
+                                </tr>
+                                <tr>
+                                    <td>2:30 PM - 3:30 PM</td>
+                                    <td>Arrival from School & Snack</td>
+                                </tr>
+                                <tr>
+                                    <td>3:30 PM - 4:30 PM</td>
+                                    <td>Homework Time</td>
+                                </tr>
+                                <tr>
+                                    <td>4:30 PM - 5:30 PM</td>
+                                    <td>Enrichment Activities/Clubs</td>
+                                </tr>
+                                <tr>
+                                    <td>5:30 PM - 6:30 PM</td>
+                                    <td>Free Play & Departure</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="program-registration w3-padding-16">
+                            <a href="index.html#tour" class="w3-button cta-button-large w3-round-large">Schedule A
+                                Tour</a>
+                            <button onclick="document.getElementById('registration-modal').style.display='block'"
+                                class="w3-button secondary-button w3-round-large w3-margin-left">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Modal -->
+    <div id="registration-modal" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-round-large w3-animate-zoom" style="max-width:800px">
+            <div class="w3-container">
+                <span onclick="document.getElementById('registration-modal').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <div class="w3-padding-32">
+                    <h3 class="w3-text-primary w3-center">Program Registration</h3>
+                    <p class="w3-center">Please fill out this form to register your child for one of our programs.</p>
+
+                    <form id="registration-form" class="w3-container w3-padding">
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <div class="form-group">
+                                    <label class="form-label" for="child-name">Child's Full Name*</label>
+                                    <input class="w3-input form-input" type="text" id="child-name" required>
+                                </div>
+                            </div>
+                            <div class="w3-half">
+                                <div class="form-group">
+                                    <label class="form-label" for="child-dob">Child's Date of Birth*</label>
+                                    <input class="w3-input form-input" type="date" id="child-dob" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Program of Interest*</label>
+                            <div class="w3-row">
+                                <div class="w3-half">
+                                    <label class="w3-radio">
+                                        <input type="radio" name="program-type" value="infants" required>
+                                        Infants (0-18 months)
+                                    </label>
+                                </div>
+                                <div class="w3-half">
+                                    <label class="w3-radio">
+                                        <input type="radio" name="program-type" value="toddlers">
+                                        Toddlers (18-36 months)
+                                    </label>
+                                </div>
+                                <div class="w3-half">
+                                    <label class="w3-radio">
+                                        <input type="radio" name="program-type" value="preschool">
+                                        Preschool (3-5 years)
+                                    </label>
+                                </div>
+                                <div class="w3-half">
+                                    <label class="w3-radio">
+                                        <input type="radio" name="program-type" value="afterschool">
+                                        After School (5-12 years)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <div class="form-group">
+                                    <label class="form-label" for="start-date">Desired Start Date*</label>
+                                    <input class="w3-input form-input" type="date" id="start-date" required>
+                                </div>
+                            </div>
+                            <div class="w3-half">
+                                <div class="form-group">
+                                    <label class="form-label" for="schedule">Schedule*</label>
+                                    <select class="w3-select form-input" id="schedule" required>
+                                        <option value="" disabled selected>Select schedule</option>
+                                        <option value="fulltime">Full-time (5 days)</option>
+                                        <option value="parttime-3">Part-time (3 days)</option>
+                                        <option value="parttime-2">Part-time (2 days)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="parent-name">Parent/Guardian Name*</label>
+                            <input class="w3-input form-input" type="text" id="parent-name" required>
+                        </div>
+
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <div class="form-group">
+                                    <label class="form-label" for="parent-email">Email Address*</label>
+                                    <input class="w3-input form-input" type="email" id="parent-email" required>
+                                </div>
+                            </div>
+                            <div class="w3-half">
+                                <div class="form-group">
+                                    <label class="form-label" for="parent-phone">Phone Number*</label>
+                                    <input class="w3-input form-input" type="tel" id="parent-phone" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="additional-info">Additional Information (allergies, special
+                                needs, etc.)</label>
+                            <textarea class="w3-input form-input" id="additional-info" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="w3-check">
+                                <input type="checkbox" required>
+                                I understand that a $100 non-refundable registration fee will be required to secure my
+                                child's spot.
+                            </label>
+                        </div>
+
+                        <div class="w3-padding-16 w3-center">
+                            <button type="submit" class="w3-button cta-button-large w3-round-large">Submit
+                                Registration</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <span onclick="document.getElementById('image-modal').style.display='none'"
+                class="w3-button w3-display-topright">&times;</span>
+            <img id="modal-img" class="w3-image" style="width:100%">
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section id="cta" class="w3-container w3-padding-64 cta-section">
+        <div class="w3-row w3-center">
+            <div class="cta-content w3-padding">
+                <h2 class="w3-text-white">Ready to give your child the best start?</h2>
+                <p class="w3-large w3-text-white">Join our Heaven Daycare family today and watch your child flourish in
+                    our nurturing environment.</p>
+                <div class="w3-padding-16">
+                    <a href="index.html#tour" class="w3-button white-button w3-round-large w3-margin-right">Schedule a
+                        Tour</a>
+                    <a href="contact.html" class="w3-button white-outline-button w3-round-large">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="w3-container w3-padding-32 w3-dark-grey">
+        <div class="w3-row">
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Heaven Daycare</h4>
+                    <p>Creating a nurturing environment where children can learn, grow, and thrive.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="parents.html">Parents</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Hours</h4>
+                    <ul class="footer-hours">
+                        <li><span>Monday - Friday:</span> 6:30 AM - 6:30 PM</li>
+                        <li><span>Saturday:</span> Closed</li>
+                        <li><span>Sunday:</span> Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 s12 w3-padding">
+                <div class="footer-section">
+                    <h4 class="w3-text-white">Contact Us</h4>
+                    <address class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Sunshine Ave, Cityville, ST 12345</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@heavendaycare.com</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="w3-row w3-padding-16">
+            <div class="w3-col s12 w3-center">
+                <p class="copyright">© 2025 Heaven Daycare. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/programs.js"></script>
+</body>
+
+</html>
